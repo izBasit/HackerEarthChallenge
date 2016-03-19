@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2016 Basit Parkar.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License"); you may not
+  ~ use this file except in compliance with the License. You may obtain a copy of
+  ~ the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+  ~ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+  ~ License for the specific language governing permissions and limitations under
+  ~ the License.
+  ~
+  ~  @date 3/19/16 5:13 AM
+  ~  @modified 3/19/16 4:50 AM
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@color/description_bg"
+                android:layout_height="96dp"
+    android:layout_margin="8dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvStartDate"
+        android:layout_alignParentTop="true"
+        android:text="@string/opens_at"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvEndDate"
+        android:layout_alignParentTop="true"
+        android:text="@string/closes_on"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"/>
+
+
+    <TextView
+        android:id="@+id/tvTimeZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:text="@string/time_zone"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/tvStartDate"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:text="18 Mar 2016"/>
+
+    <TextView
+        android:id="@+id/tvEndDate"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:text="20 Mar 2016"/>
+
+
+    <TextView
+        android:id="@+id/tvEventTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        tools:text="06:00 PM IST - 11:00 PM IST"/>
+
+
+    <TextView
+        android:id="@+id/tvChallengeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEventTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        tools:text="ONGOING"/>
+
+
+</RelativeLayout>
